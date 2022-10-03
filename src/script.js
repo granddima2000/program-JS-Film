@@ -34,14 +34,22 @@ const personalMovieDB = {
 };
 
 const a = prompt('Один из последних просмотренных фильмов?', ''),
-      b = prompt('На сколько оцените его?', ''),
+      b = +prompt('На сколько оцените его?', ''),
       c = prompt('Один из последних просмотренных фильмов?', ''),
-      d = prompt('На сколько оцените его?', '');
+      d = +prompt('На сколько оцените его?', '');
 
-    personalMovieDB[a] = b;
-    personalMovieDB[c] = d;
+      personalMovieDB.movies[a] = b;
+      personalMovieDB.movies[c] = d;
 
 console.log(personalMovieDB);
+
+
+
+
+
+
+
+
 
 
 
@@ -55,12 +63,15 @@ const personalMovieDB = {
     privat: false
 };
 
-const a = prompt('Один из последний просмотренных фильмов?', ''),
+const a = prompt('Один из последних просмотренных фильмов?', ''),
       b = prompt('На сколько оцените его?', ''),
-      c = prompt('Один из последний просмотренных фильмов?', ''),
+      c = prompt('Один из последних просмотренных фильмов?', ''),
       d = prompt('На сколько оцените его?', '');
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+    personalMovieDB[a] = b;
+    personalMovieDB[c] = d;
 
-console.log(personalMovieDB); */
+console.log(personalMovieDB);
+ */
+
+
